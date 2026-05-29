@@ -41,6 +41,7 @@ class Guest(db.Model):
 # CREATE DB
 # =========================
 with app.app_context():
+    db.drop_all()
     db.create_all()
 
     # =========================
