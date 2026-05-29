@@ -98,6 +98,11 @@ def get_guests():
         }
         for g in guests
     ])
+@app.route("/")
+def home():
+    return jsonify({
+        "message": "Visa SaaS Backend Running"
+    })
 
 # =========================
 # ADD GUEST

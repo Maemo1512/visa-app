@@ -24,7 +24,7 @@ export default function App() {
     visa_image: null,
   });
 
-  const API = "http://127.0.0.1:5000";
+ const API = "https://visa-app-3w2g.onrender.com";
 
   /* ================= FETCH ================= */
   const fetchGuests = async () => {
