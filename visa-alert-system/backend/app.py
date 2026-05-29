@@ -43,6 +43,15 @@ class Guest(db.Model):
 with app.app_context():
     db.create_all()
 
+    # =========================
+# DEBUG ERROR HANDLER
+# =========================
+@app.errorhandler(Exception)
+def handle_exception(e):
+    return jsonify({
+        "error": str(e)
+    }), 500
+
 # =========================
 # HOME
 # =========================
